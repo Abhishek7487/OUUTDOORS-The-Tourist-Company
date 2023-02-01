@@ -1,0 +1,301 @@
+/* --------------------------------------- */
+/* ------------- MEDIA QUERIES ----------- */
+/* --------------------------------------- */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58.5%;
+  }
+
+  .sectionAbout {
+    width: 90rem;
+    margin: 10.6rem auto;
+  }
+
+  .aboutImg {
+    height: 16rem;
+  }
+
+  .featuresCards {
+    width: 90rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featuresCards .featureCard:last-child {
+    display: none;
+  }
+
+  .tourCards {
+    gap: 2.8rem;
+  }
+
+  .tourImg {
+    height: 19rem;
+  }
+
+  .reviewCard {
+    width: 65%;
+  }
+
+  .ctaCover {
+    background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 60%,
+      transparent 50%
+    );
+  }
+
+  .ctaInput,
+  .ctaCheckBox {
+    width: 50%;
+  }
+
+  .footerText {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 54.5%;
+  }
+
+  #mainContainer {
+    padding: 0;
+  }
+
+  .navMenu {
+    display: block;
+    background: var(--color-white);
+    padding: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    position: fixed;
+    right: 5rem;
+    top: 4rem;
+    box-shadow: 1rem 1rem 5rem rgba(51, 51, 51, 0.685);
+    z-index: 1;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .sectionAbout {
+    width: 90%;
+    margin: 10.6rem auto;
+    min-height: 70rem;
+  }
+
+  .aboutHeading {
+    font-size: 2.6rem;
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+    width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+
+  .aboutImg {
+    height: 14rem;
+  }
+
+  .aboutImg1,
+  .aboutImg3 {
+    top: 2rem;
+    right: 0;
+  }
+
+  .aboutImg3 {
+    left: 0;
+    right: 0;
+  }
+
+  .aboutImg2 {
+    top: -2rem;
+    left: 15rem;
+    z-index: 1;
+  }
+
+  .sectionFeatures {
+    height: 145rem;
+  }
+
+  .featuresCards {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+  }
+
+  .featuresCards .featureCard:last-child {
+    display: flex;
+  }
+
+  .tourCards {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .tourImg {
+    height: 25rem;
+  }
+
+  .tourDiscoverBtn {
+    margin-bottom: 8rem;
+  }
+
+  .ctaCard {
+    width: 50%;
+    height: 60rem;
+  }
+
+  .ctaCover {
+    background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 50%
+    );
+  }
+
+  .ctaInput,
+  .ctaCheckBox {
+    width: 100%;
+  }
+
+  .ctaCheckBox {
+    flex-direction: column;
+    gap: 2.6rem;
+    padding-left: 1.2rem;
+  }
+
+  .footerText {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .reviewCard {
+    transform: skew(0);
+    padding: 3rem;
+  }
+
+  .reviewCardContent {
+    flex-direction: column;
+    transform: skew(0);
+  }
+
+  .reviewCardImg {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .reviewCardText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sectionCta {
+    padding: 10rem 0;
+  }
+
+  .ctaCard {
+    width: 65%;
+  }
+
+  .footerText {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 48.5%;
+  }
+
+  .sectionHeader {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  .heroHeading {
+    gap: 2rem;
+  }
+
+  .heroHeading .pHeading {
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+  }
+
+  .heroHeading .sHeading {
+    letter-spacing: 0.4rem;
+    word-spacing: 1rem;
+  }
+
+  .aboutHeading {
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .sectionReviews {
+    padding: 7.5rem 0;
+  }
+
+  .reviewHeading {
+    font-size: 3rem;
+  }
+
+  .ctaInput {
+    font-size: 2rem;
+  }
+
+  .sectionFooter {
+    /* padding: 3rem 0; */
+  }
+
+  .footerLogo {
+    height: 10rem;
+  }
+
+  .footerText {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .aboutContent {
+    width: 40rem;
+  }
+
+  .aboutImg {
+    height: 12rem;
+  }
+
+  .aboutImg2 {
+    left: 11rem;
+  }
+
+  .reviewCard {
+    width: 85%;
+  }
+
+  .ctaCard {
+    height: 55rem;
+    width: 80%;
+  }
+
+  .ctaHeading {
+    font-size: 2.4rem;
+  }
+}
