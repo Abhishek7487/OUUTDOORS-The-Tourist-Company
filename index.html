@@ -27,34 +27,51 @@
   </head>
   <body>
     <div id="mainContainer">
-      <!-- Sectioni: HEADER -->
-      <section class="sectionHeader">
+      <!-- Section: NAV -->
+      <section id="sectionNav">
         <div class="navbar">
           <div class="navLogo">
-            <img src="./img/logo-white.png" alt="navLogo" />
+            <a href="#">
+              <img src="./img/logo-white.png" alt="navLogo" />
+            </a>
           </div>
           <ul class="navList">
-            <li class="navListItem">About</li>
-            <li class="navListItem">Features</li>
-            <li class="navListItem">Tours</li>
-            <li class="navListItem">Reviews</li>
-            <li class="navListItem">Book Now</li>
+            <li><a class="navListItem" href="#sectionAbout"> About</a></li>
+            <li>
+              <a class="navListItem" href="#sectionFeatures"> Features</a>
+            </li>
+            <li><a class="navListItem" href="#sectionTours">Tours</a></li>
+            <li><a class="navListItem" href="#sectionReviews"> Reviews</a></li>
+            <li><a class="navListItem" href="#sectionCta">Book Now</a></li>
           </ul>
-          <div class="navMenu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
         </div>
+        <div class="navMenu">
+          <i class="fa-solid fa-bars" id="navIcon"></i>
+        </div>
+        <div class="mobileNav">
+          <ul class="mobileNavList">
+            <li class="mnavLinks"><a href="#sectionHeader"> HOME</a></li>
+            <li class="mnavLinks"><a href="#sectionAbout"> ABOUT</a></li>
+            <li class="mnavLinks"><a href="#sectionFeatures"> FEATURES</a></li>
+            <li class="mnavLinks"><a href="#sectionTours"> TOURS</a></li>
+            <li class="mnavLinks"><a href="#sectionReviews"> REVIEWS</a></li>
+            <li class="mnavLinks"><a href="#sectionCta"> BOOK NOW</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Sectioni: HEADER -->
+      <section id="sectionHeader">
         <div class="hero">
           <h1 class="heroHeading">
             <span class="pHeading">Outdoors</span>
             <span class="sHeading">is where life happens</span>
           </h1>
-          <button class="heroBtn">Discover Our Tours</button>
+          <a class="heroBtn">Discover Our Tours</a>
         </div>
       </section>
 
       <!-- Section: ABOUT -->
-      <section class="sectionAbout">
+      <section id="sectionAbout">
         <h1 class="aboutHeading">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h1>
         <div class="aboutContent">
           <div class="aboutText">
@@ -105,7 +122,7 @@
       </section>
 
       <!-- Section: FEATURES -->
-      <section class="sectionFeatures">
+      <section id="sectionFeatures">
         <div class="featuresCards">
           <div class="featureCard">
             <i class="featureIcon fa-solid fa-globe"></i>
@@ -142,7 +159,7 @@
       </section>
 
       <!-- Section: TOURS -->
-      <section class="sectionTours">
+      <section id="sectionTours">
         <h2 class="toursHeading">Most popular tours</h2>
         <div class="tourCards">
           <div class="tourCard">
@@ -210,7 +227,7 @@
       </section>
 
       <!-- Section: Reviews -->
-      <section class="sectionReviews">
+      <section id="sectionReviews">
         <div class="bgVideo">
           <video class="bgVideoContent" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -268,7 +285,7 @@
       </section>
 
       <!-- Section: CTA -->
-      <section class="sectionCta">
+      <section id="sectionCta">
         <div class="ctaCard">
           <div class="ctaCover">
             <h1 class="ctaHeading">Start Booking Now!</h1>
@@ -306,7 +323,7 @@
       </section>
 
       <!-- Section: FOOTER -->
-      <section class="sectionFooter">
+      <section id="sectionFooter">
         <img src="./img/favicon.png" alt="" class="footerLogo" />
         <p class="footerText">
           Built by ABHISHEK PATIL & SUMIT PAWAR for BCA 2nd year (SEM II) MINI
@@ -314,5 +331,12 @@
         </p>
       </section>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

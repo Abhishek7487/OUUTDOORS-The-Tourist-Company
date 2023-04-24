@@ -6,7 +6,7 @@
     font-size: 58.5%;
   }
 
-  .sectionAbout {
+  #sectionAbout {
     width: 90rem;
     margin: 10.6rem auto;
   }
@@ -64,6 +64,10 @@
     padding: 0;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .navMenu {
     display: block;
     background: var(--color-white);
@@ -77,18 +81,18 @@
     font-size: 2.4rem;
     cursor: pointer;
     transition: all 0.1s;
-    position: fixed;
-    right: 5rem;
-    top: 4rem;
     box-shadow: 1rem 1rem 5rem rgba(51, 51, 51, 0.685);
-    z-index: 1;
+    position: fixed;
+    top: 3rem;
+    right: 3.8rem;
+    z-index: 10;
   }
 
   .navList {
     display: none;
   }
 
-  .sectionAbout {
+  #sectionAbout {
     width: 90%;
     margin: 10.6rem auto;
     min-height: 70rem;
@@ -128,7 +132,7 @@
     z-index: 1;
   }
 
-  .sectionFeatures {
+  #sectionFeatures {
     height: 145rem;
   }
 
@@ -205,7 +209,7 @@
     text-align: center;
   }
 
-  .sectionCta {
+  #sectionCta {
     padding: 10rem 0;
   }
 
@@ -223,7 +227,7 @@
     font-size: 48.5%;
   }
 
-  .sectionHeader {
+  #sectionHeader {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 
@@ -248,7 +252,7 @@
     line-height: 1.4;
   }
 
-  .sectionReviews {
+  #sectionReviews {
     padding: 7.5rem 0;
   }
 
@@ -260,7 +264,7 @@
     font-size: 2rem;
   }
 
-  .sectionFooter {
+  #sectionFooter {
     /* padding: 3rem 0; */
   }
 
