@@ -43,6 +43,14 @@ body {
   background-color: var(--color-grey-light-1);
 }
 
+#sectionAbout,
+#sectionFeatures,
+#sectionTours,
+#sectionReviews,
+#sectionCta {
+  padding-top: 10rem;
+}
+
 /* ---------------- */
 /* Section: HEADER */
 #sectionHeader {
